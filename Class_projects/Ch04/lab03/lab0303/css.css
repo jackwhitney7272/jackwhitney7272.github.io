@@ -1,0 +1,95 @@
+/* 
+   Team Members: Jack Whitney, [add classmates here]
+   Date: April 15, 2026
+   File Name: styles.css
+*/
+
+/* CSS Reset: removes default browser spacing and formatting */
+body, header, nav, main, footer, h1, h2, h3, p, ul, li, a, img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Make images responsive */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* General page styles */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    color: #111;
+    line-height: 1.5;
+}
+
+/* Header styles begin */
+header {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Nav styles begin */
+nav {
+    background-color: #0055a5;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 12px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Main styles begin */
+main {
+    background-color: white;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+h1, h2 {
+    margin-bottom: 12px;
+}
+
+p {
+    margin-bottom: 12px;
+}
+
+/* Example class selector */
+.highlight {
+    background-color: #ffeb99;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Example id selector */
+#featured-event {
+    border: 2px solid #003366;
+    padding: 15px;
+    margin-top: 15px;
+}
+
+/* Footer styles begin */
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9em;
+}
