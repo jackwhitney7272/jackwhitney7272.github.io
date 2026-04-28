@@ -1,0 +1,387 @@
+/*
+Author: Jack Whitney
+Date: 4/27/2026
+File Name: styles.css
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, img, h1, h2, h3, ul, section, aside, figure, figcaption, table, caption, tr, th, td, fieldset, legend, form, input, label {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Style rule for images */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Style rule for box sizing applies to all elements */
+* {
+    box-sizing: border-box;
+}
+
+/* Style rules for body and page */
+body {
+    background-color: #fff;
+    font-family: Verdana, Arial, sans-serif;
+}
+
+/* Style rules for header content */
+header {
+    text-align: center;
+    color: #373684;
+    background-color: #fff;
+    padding: 3% 0 2%;
+}
+
+header h1 {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 2.8em;
+    font-style: italic;
+    font-weight: bold;
+}
+
+/* Style rules for navigation area */
+nav {
+    background-color: #373684;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav li {
+    border-top: 1px solid #c0caf7;
+}
+
+nav li a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 0.65em 1em;
+    text-decoration: none;
+    font-size: 1.25em;
+    font-family: Georgia, 'Times New Roman', serif;
+}
+
+/* Style rules for main content */
+main {
+    padding: 4% 3%;
+    background-color: #e5e9fc;
+    overflow: auto;
+}
+
+main p {
+    font-size: 1.1em;
+    line-height: 1.5;
+    margin-bottom: 1em;
+}
+
+.action {
+    font-size: 1.5em;
+    color: #373684;
+    font-weight: bold;
+}
+
+/* Mobile viewport rules */
+.tab-desk {
+    display: none;
+}
+
+aside {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #373684;
+    text-shadow: 3px 3px 10px #8280cb;
+    margin: 0 auto 8%;
+}
+
+figure {
+    position: relative;
+    max-width: 275px;
+    margin: 2% auto 8%;
+    border: 8px solid #373684;
+}
+
+figure img {
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+}
+
+figcaption {
+    position: absolute;
+    bottom: 0;
+    background: rgba(55, 54, 132, 0.7);
+    color: #fff;
+    width: 100%;
+    padding: 5% 0;
+    text-align: center;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+section {
+    margin-bottom: 1.5em;
+}
+
+section h3 {
+    color: #373684;
+    margin: 0.75em 0;
+}
+
+.round {
+    border-radius: 8px;
+}
+
+#info {
+    clear: left;
+    background-color: #c0caf7;
+    padding: 2%;
+    margin-top: 1em;
+}
+
+#contact, #rental h2, #form h2 {
+    text-align: center;
+}
+
+#contact {
+    margin-bottom: 3%;
+}
+
+#contact a {
+    color: #4645a8;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#rental h2, #form h2 {
+    font-size: 1.25em;
+    margin-bottom: 1em;
+}
+
+.map {
+    border: 5px solid #373684;
+    width: 95%;
+    height: 300px;
+}
+
+/* Style rules for table */
+table {
+    border: 1px solid #373684;
+    border-collapse: collapse;
+    margin: 0 auto;
+    width: 100%;
+}
+
+caption {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 1%;
+}
+
+th, td {
+    border: 1px solid #373684;
+    padding: 2%;
+}
+
+th {
+    background-color: #373684;
+    color: #fff;
+    font-size: 1.15em;
+}
+
+tr:nth-child(odd) {
+    background-color: #b7b7e1;
+}
+
+/* Style rules for form elements */
+fieldset, input {
+    margin-bottom: 2%;
+}
+
+fieldset {
+    border: 2px solid #888;
+    padding: 2%;
+}
+
+fieldset legend {
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+label {
+    display: block;
+    padding-top: 3%;
+}
+
+form #submit {
+    margin: 0 auto;
+    display: block;
+    padding: 3%;
+    background-color: #b7b7e1;
+    font-size: 1em;
+}
+
+/* Style rules for footer content */
+footer {
+    text-align: center;
+    font-size: 0.85em;
+    clear: left;
+    padding: 3% 0;
+    border-top: 2px solid #373684;
+    background-color: #f8f8ff;
+}
+
+footer p {
+    margin-bottom: 1em;
+}
+
+footer a {
+    color: #4645a8;
+    text-decoration: underline;
+}
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 620px) {
+    .tab-desk {
+        display: block;
+    }
+
+    nav li {
+        display: inline-block;
+        border-top: none;
+        border-right: 1px solid #c0caf7;
+    }
+
+    nav li:last-child {
+        border-right: none;
+    }
+
+    nav li a {
+        padding: 0.55em 1.5em;
+        font-size: 1em;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 20px;
+    }
+
+    aside {
+        grid-column: 1 / span 2;
+        margin-bottom: 2%;
+    }
+
+    figure {
+        margin: 0 auto;
+    }
+
+    #piano, #guitar, #violin {
+        width: 29%;
+        float: left;
+        margin: 0 2%;
+    }
+
+    .map {
+        width: 80%;
+        height: 400px;
+    }
+
+    /* Tablet Viewport: Style rule for form element */
+    form {
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 1000px) {
+    header {
+        padding: 1% 0;
+    }
+
+    header h1 {
+        font-size: 3.2em;
+    }
+
+    nav li a {
+        padding: 0.7em 3.5em;
+        font-size: 1.1em;
+    }
+
+    main {
+        padding: 3% 3.5% 5%;
+    }
+
+    .grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 3.5%;
+    }
+
+    aside {
+        grid-column: 1 / span 4;
+        font-size: 1.8em;
+        margin-bottom: 1.5%;
+    }
+
+    figcaption {
+        font-size: 1em;
+    }
+
+    figure {
+        max-width: 275px;
+        width: 100%;
+    }
+
+    figure img {
+        height: 330px;
+    }
+
+    .map {
+        width: 60%;
+        height: 450px;
+    }
+
+    /* Desktop Viewport: Style rules for table */
+    table {
+        width: 70%;
+    }
+
+    /* Desktop Viewport: Style rules for form elements */
+    .form-grid {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 20px;
+    }
+
+    .btn {
+        grid-column: 1 / span 2;
+    }
+}
+
+/* Media Query for Large Desktop Viewport */
+@media screen and (min-width: 1500px) {
+    #container {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+/* Media Query for Print */
+@media print {
+    body {
+        background-color: #fff;
+        color: #000;
+    }
+
+    nav, .tab-desk {
+        display: none;
+    }
+}

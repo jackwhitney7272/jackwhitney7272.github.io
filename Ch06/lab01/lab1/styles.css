@@ -1,0 +1,23 @@
+body{font-family:Arial;}
+img{max-width:100%;display:block;}
+
+nav{background:#373684;}
+nav ul{list-style:none;text-align:center;}
+nav li{border-top:1px solid #e5e9fc;}
+nav a{display:block;color:#fff;padding:.5em;}
+
+main{background:#e5e9fc;padding:2%;overflow:auto;}
+
+#info{background:#c0caf7;padding:2%;margin-bottom:2%;}
+
+@media screen and (min-width:550px),print{
+.tab-desk{display:block;}
+.mobile{display:none;}
+
+nav li{display:inline-block;border-right:1px solid #e5e9fc;font-size:1.5em;}
+nav li:last-child{border:none;}
+}
+
+@media screen and (min-width:769px),print{
+#piano,#guitar,#violin{width:29%;float:left;margin:0 2%;}
+}

@@ -1,0 +1,193 @@
+/* 
+   Team Members: Jack Whitney, [add classmates here]
+   Date: April 15, 2026
+   File Name: styles.css
+*/
+
+/* CSS Reset: removes default browser spacing and formatting */
+body, header, nav, main, footer, h1, h2, h3, p, ul, li, a, img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Make images responsive */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* General page styles */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    color: #111;
+    line-height: 1.5;
+}
+
+/* Header styles begin */
+header {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Nav styles begin */
+nav {
+    background-color: #0055a5;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 12px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Main styles begin */
+main {
+    background-color: white;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+h1, h2 {
+    margin-bottom: 12px;
+}
+
+p {
+    margin-bottom: 12px;
+}
+
+/* Example class selector */
+.highlight {
+    background-color: #ffeb99;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Example id selector */
+#featured-event {
+    border: 2px solid #003366;
+    padding: 15px;
+    margin-top: 15px;
+}
+
+/* Footer styles begin */
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9em;
+}
+/* Tablet Media Query */
+@media screen and (min-width: 600px) {
+    nav a {
+        display: inline-block;
+        padding: 0.75em 1em;
+    }
+
+    main {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    img {
+        max-width: 80%;
+        margin: 1em auto;
+    }
+}
+
+/* Desktop Media Query */
+@media screen and (min-width: 900px) {
+    body {
+        background: linear-gradient(#ffffff, #dfefff);
+    }
+
+    header {
+        padding: 2em;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    nav a {
+        font-size: 1.2em;
+        text-decoration: none;
+    }
+
+    /* Dynamic pseudo-class */
+    nav a:hover {
+        color: #ffffff;
+        background-color: #336699;
+    }
+
+    /* Two-column layout */
+    #artclub {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2em;
+        align-items: start;
+    }
+
+    #artclub h2,
+    #artclub h3,
+    #artclub p,
+    #artclub ul {
+        grid-column: span 1;
+    }
+
+    #artclub img {
+        grid-column: 2;
+        grid-row: 2 / span 3;
+        width: 100%;
+    }
+}
+
+/* Large Desktop Media Query */
+@media screen and (min-width: 1200px) {
+    main {
+        max-width: 1100px;
+    }
+
+    body {
+        font-size: 1.1em;
+    }
+}
+
+/* Print Media Query */
+@media print {
+    nav,
+    img {
+        display: none;
+    }
+
+    body {
+        background: white;
+        color: black;
+        font-family: serif;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    a {
+        color: black;
+        text-decoration: none;
+    }
+}
