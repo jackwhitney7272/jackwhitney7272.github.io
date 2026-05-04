@@ -1,34 +1,221 @@
 <!DOCTYPE html>
-<html lang="en"
+<html lang="en">
 <head>
-<title>Strike a chord</title>
-<meta charset="utf-8">
-</head>
-<body>
-<img src="jack.jpg" alt="piano teacher and student sitting at a piano" height="600" width="1000">
-<header>
-here is Jacks Labs 1-12 
+    <title>Jack's HTML Labs</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
-</header> 
-<nav>
-<a href="Class_projects/Ch01/Lab0001/lab1.html">go to ch1 lab1</a>
-<a href="Class_projects/Ch01/lab0002/Lab2.html">go to ch1 lab2</a>
-  <br>
-<a href="Class_projects/Ch02/Lab0201/index.html">go to ch2 lab1</a> 
-<a href="Class_projects/Ch02/Lab0202/rescue/index.html">go to ch2 lab2</a> 
-<br>
-  <a href="Class_projects/Ch03/lab0301/index.html">go to ch3 lab1</a> 
-<a href="Class_projects/Ch03/lab0302/index.html">go to ch3 lab2</a> 
-<a href="Class_projects/Ch03/lab0303/homepage.html">go to ch3 lab2</a>
-  <br>
-  <a href="Class_projects/Ch04/music/index.html">go to ch4 lab1</a>
-  <a href="Class_projects/Ch04/lab02/lab02/index.html">go to ch4 lab2</a>
-</nav> 
-<main>
-place main webpage content 
-</main>
-<footer>
-place footer info
-</footer>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #eef2f7;
+            color: #1f2937;
+            line-height: 1.5;
+        }
+
+        header {
+            background-color: #1f3a5f;
+            color: white;
+            text-align: center;
+            padding: 2em 1em;
+        }
+
+        header img {
+            max-width: 100%;
+            width: 850px;
+            height: auto;
+            margin: 0 auto 1.5em;
+            border-radius: 12px;
+            display: block;
+        }
+
+        header h1 {
+            font-size: 2.2em;
+            margin-bottom: 0.3em;
+        }
+
+        header p {
+            font-size: 1.1em;
+        }
+
+        main {
+            width: min(1100px, 94%);
+            margin: 2em auto;
+        }
+
+        .chapter-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 1.2em;
+        }
+
+        .chapter-card {
+            background-color: white;
+            border-radius: 12px;
+            padding: 1.2em;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        .chapter-card h2 {
+            color: #1f3a5f;
+            margin-bottom: 0.7em;
+            border-bottom: 2px solid #dbeafe;
+            padding-bottom: 0.35em;
+        }
+
+        .chapter-card ul {
+            list-style-type: none;
+        }
+
+        .chapter-card li {
+            margin: 0.45em 0;
+        }
+
+        .chapter-card a {
+            color: #0f5fa8;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .chapter-card a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.5em;
+            background-color: #1f3a5f;
+            color: white;
+            margin-top: 2em;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src="jack.jpg" alt="piano teacher and student sitting at a piano">
+        <h1>Jack's HTML Labs</h1>
+        <p>Links to my HTML class projects and lab pages.</p>
+    </header>
+
+    <main>
+        <div class="chapter-grid">
+            <section class="chapter-card">
+                <h2>Chapter 1</h2>
+                <ul>
+                    <li><a href="Class_projects/Ch01/Lab0001/lab1.html">Lab 1</a></li>
+                    <li><a href="Class_projects/Ch01/lab0002/Lab2.html">Lab 2</a></li>
+                </ul>
+            </section>
+            <section class="chapter-card">
+                <h2>Chapter 2</h2>
+                <ul>
+                    <li><a href="Class_projects/Ch02/Lab0201/index.html">Lab 1</a></li>
+                    <li><a href="Class_projects/Ch02/Lab0202/rescue/index.html">Lab 2</a></li>
+                </ul>
+            </section>
+            <section class="chapter-card">
+                <h2>Chapter 3</h2>
+                <ul>
+                    <li><a href="Class_projects/Ch03/lab0301/index.html">Lab 1 - Home</a></li>
+                    <li><a href="Class_projects/Ch03/lab0301/lessons.html">Lab 1 - Lessons</a></li>
+                    <li><a href="Class_projects/Ch03/lab0302/index.html">Lab 2 - Home</a></li>
+                    <li><a href="Class_projects/Ch03/lab0302/about.html">Lab 2 - About</a></li>
+                    <li><a href="Class_projects/Ch03/lab0302/contact.html">Lab 2 - Contact</a></li>
+                    <li><a href="Class_projects/Ch03/lab0302/faqs.html">Lab 2 - FAQs</a></li>
+                    <li><a href="Class_projects/Ch03/lab0302/gallery.html">Lab 2 - Gallery</a></li>
+                    <li><a href="Class_projects/Ch03/lab0302/partnership.html">Lab 2 - Partnership</a></li>
+                    <li><a href="Class_projects/Ch03/lab0303/homepage.html">Lab 3 - Home Page</a></li>
+                    <li><a href="Class_projects/Ch03/lab0303/artclub.html">Lab 3 - Art Club</a></li>
+                    <li><a href="Class_projects/Ch03/lab0303/historyclub.html">Lab 3 - History Club</a></li>
+                    <li><a href="Class_projects/Ch03/lab0303/chemclub.html">Lab 3 - Chem Club</a></li>
+                </ul>
+            </section>
+            <section class="chapter-card">
+                <h2>Chapter 4</h2>
+                <ul>
+                    <li><a href="Class_projects/Ch04/music/index.html">Lab 1 - Home</a></li>
+                    <li><a href="Class_projects/Ch04/music/lessons.html">Lab 1 - Lessons</a></li>
+                    <li><a href="Class_projects/Ch04/music/contact.html">Lab 1 - Contact</a></li>
+                    <li><a href="Class_projects/Ch04/lab02/lab02/index.html">Lab 2 - Home</a></li>
+                    <li><a href="Class_projects/Ch04/lab02/lab02/about.html">Lab 2 - About</a></li>
+                    <li><a href="Class_projects/Ch04/lab02/lab02/contact.html">Lab 2 - Contact</a></li>
+                    <li><a href="Class_projects/Ch04/lab02/lab02/faqs.html">Lab 2 - FAQs</a></li>
+                    <li><a href="Class_projects/Ch04/lab02/lab02/gallery.html">Lab 2 - Gallery</a></li>
+                    <li><a href="Class_projects/Ch04/lab02/lab02/partnership.html">Lab 2 - Partnership</a></li>
+                </ul>
+            </section>
+            <section class="chapter-card">
+                <h2>Chapter 5</h2>
+                <ul>
+                    <li><a href="Ch05/lab01/index.html">Lab 1 - Home</a></li>
+                    <li><a href="Ch05/lab01/index%20-%20Copy.html">Lab 1 - Home Copy</a></li>
+                    <li><a href="Ch05/lab01/lessons.html">Lab 1 - Lessons</a></li>
+                    <li><a href="Ch05/lab01/contact.html">Lab 1 - Contact</a></li>
+                    <li><a href="Ch05/lab02/index.html">Lab 2 - Home</a></li>
+                    <li><a href="Ch05/lab02/about.html">Lab 2 - About</a></li>
+                    <li><a href="Ch05/lab02/contact.html">Lab 2 - Contact</a></li>
+                    <li><a href="Ch05/lab02/faqs.html">Lab 2 - FAQs</a></li>
+                    <li><a href="Ch05/lab02/gallery.html">Lab 2 - Gallery</a></li>
+                    <li><a href="Ch05/lab02/partnership.html">Lab 2 - Partnership</a></li>
+                    <li><a href="Ch05/lab02/images/about.html.html">Lab 2 - Extra About File</a></li>
+                </ul>
+            </section>
+            <section class="chapter-card">
+                <h2>Chapter 6</h2>
+                <ul>
+                    <li><a href="Ch06/lab01/lab1/lessons.html">Lab 1 - Lessons</a></li>
+                    <li><a href="Ch06/lab02/index.html">Lab 2 - Home</a></li>
+                    <li><a href="Ch06/lab02/about.html">Lab 2 - About</a></li>
+                    <li><a href="Ch06/lab02/contact.html">Lab 2 - Contact</a></li>
+                    <li><a href="Ch06/lab02/faqs.html">Lab 2 - FAQs</a></li>
+                    <li><a href="Ch06/lab02/gallery.html">Lab 2 - Gallery</a></li>
+                    <li><a href="Ch06/lab02/partnership.html">Lab 2 - Partnership</a></li>
+                    <li><a href="Ch06/lab03/homepage.html">Lab 3 - Home Page</a></li>
+                    <li><a href="Ch06/lab03/artclub.html">Lab 3 - Art Club</a></li>
+                    <li><a href="Ch06/lab03/historyclub.html">Lab 3 - History Club</a></li>
+                    <li><a href="Ch06/lab03/chemclub.html">Lab 3 - Chem Club</a></li>
+                </ul>
+            </section>
+            <section class="chapter-card">
+                <h2>Chapter 7</h2>
+                <ul>
+                    <li><a href="Ch07/lab01/index.html">Lab 1 - Home</a></li>
+                    <li><a href="Ch07/lab01/instructors.html">Lab 1 - Instructors</a></li>
+                    <li><a href="Ch07/lab02/index.html">Lab 2 - Home</a></li>
+                    <li><a href="Ch07/lab02/about.html">Lab 2 - About</a></li>
+                    <li><a href="Ch07/lab02/contact.html">Lab 2 - Contact</a></li>
+                    <li><a href="Ch07/lab02/faqs.html">Lab 2 - FAQs</a></li>
+                    <li><a href="Ch07/lab02/gallery.html">Lab 2 - Gallery</a></li>
+                    <li><a href="Ch07/lab02/partnership.html">Lab 2 - Partnership</a></li>
+                    <li><a href="Ch07/lab02/template.html">Lab 2 - Template</a></li>
+                    <li><a href="Ch07/lab03/homepage.html">Lab 3 - Home Page</a></li>
+                    <li><a href="Ch07/lab03/events.html">Lab 3 - Events</a></li>
+                    <li><a href="Ch07/lab03/artclub.html">Lab 3 - Art Club</a></li>
+                    <li><a href="Ch07/lab03/historyclub.html">Lab 3 - History Club</a></li>
+                    <li><a href="Ch07/lab03/chemclub.html">Lab 3 - Chem Club</a></li>
+                </ul>
+            </section>
+            <section class="chapter-card">
+                <h2>Chapter 8</h2>
+                <ul>
+                    <li><a href="Ch08/lab01/index.html">Lab 1 - Home</a></li>
+                    <li><a href="Ch08/lab01/instructors.html">Lab 1 - Instructors</a></li>
+                    <li><a href="Ch08/lab01/contact.html">Lab 1 - Contact</a></li>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Jack Whitney</p>
+    </footer>
+
 </body>
-</html> 
+</html>
