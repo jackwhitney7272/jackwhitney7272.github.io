@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--
+    Group members: Jack Whitney
+    Filename: request.html
+    Date: 2026-05-02
+    Purpose: Allow visitors to request that a club or event be added to the website.
+-->
+
+<head>
+    <title>CCSU Student Clubs - Add a Club or Event</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/bluedevil-favicon-32x32.png">
+</head>
+
+<body>
+    <header>
+        <h1 class="centered">Add a Club or Event</h1>
+        <p class="tab-desk centered">Make the Most of Your Life at CCSU!</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="clubinfo.html">Student Clubs</a></li>
+            <li><a href="eventinfo.html">Event Calendar</a></li>
+            <li><a href="request.html">Add a Club or Event</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="request-intro">
+            <h2 class="centered">Submit Club or Event Information</h2>
+            <p class="centered">Use the form below to share a new club, organization, meeting, or event that should be listed on the website.</p>
+        </section>
+
+        <form action="#" method="post" class="request-form">
+            <fieldset>
+                <legend>Contact Information</legend>
+
+                <label for="fname">First Name *</label>
+                <input type="text" id="fname" name="fname" required>
+
+                <label for="lname">Last Name *</label>
+                <input type="text" id="lname" name="lname" required>
+
+                <label for="email">School Email *</label>
+                <input type="email" id="email" name="email" placeholder="student@my.ccsu.edu" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Submission Details</legend>
+
+                <label for="entryType">What would you like to add?</label>
+                <select id="entryType" name="entryType">
+                    <option value="club">Club or Organization</option>
+                    <option value="event">Event</option>
+                    <option value="both">Both</option>
+                </select>
+
+                <label for="entryName">Club or Event Name *</label>
+                <input type="text" id="entryName" name="entryName" required>
+
+                <label for="entryDate">Event Date</label>
+                <input type="date" id="entryDate" name="entryDate">
+
+                <label for="entryDesc">Description</label>
+                <textarea id="entryDesc" name="entryDesc" rows="5" placeholder="Add meeting times, location, advisor, or other helpful details."></textarea>
+            </fieldset>
+
+            <input type="submit" id="submit" value="Submit Request" class="btn">
+        </form>
+    </main>
+
+    <footer>
+        <p class="tel-link"><a href="tel:8885551212">(888)&nbsp;555-1212</a></p>
+        <p><a class="email-link" href="mailto:studentclubs@ccsu.edu">studentclubs@ccsu.edu</a></p>
+        <p class="tab-desk">
+            <a href="http://www.ccsu.edu"><img class="centered" src="images/ccsu-logo.png" alt="CCSU Logo"></a>
+        </p>
+        <p class="mobile"><a href="http://www.ccsu.edu">www.ccsu.edu</a></p>
+    </footer>
+</body>
+</html>

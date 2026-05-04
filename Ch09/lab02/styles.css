@@ -1,0 +1,243 @@
+/*
+Author: Jack Whitney
+Date: 5/2/2026
+File Name: styles.css
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, img, h1, h2, h3, ul, li, p, section, article, aside, figure, figcaption, video, table, caption, th, td, form, fieldset, legend, label, input, textarea {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Style rule for images and video */
+img, video {
+    max-width: 100%;
+    display: block;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f6eee4;
+    color: #2a1f14;
+}
+
+#wrapper {
+    width: 95%;
+    margin: 0 auto;
+    background-color: #fff;
+    min-height: 100vh;
+}
+
+header img {
+    width: 100%;
+}
+
+.mobile {
+    display: none;
+}
+
+nav {
+    background-color: #2a1f14;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    font-size: 1.15em;
+}
+
+nav li a {
+    display: block;
+    color: #f6eee4;
+    text-decoration: none;
+    padding: 0.75em 1.25em;
+}
+
+nav li a:hover {
+    background-color: #f6eee4;
+    color: #2a1f14;
+}
+
+main {
+    padding: 2%;
+}
+
+main h2 {
+    margin-bottom: 0.75em;
+    color: #3d2b1f;
+}
+
+main h3 {
+    margin: 0.75em 0 0.4em;
+}
+
+main p {
+    margin-bottom: 1em;
+    line-height: 1.5;
+}
+
+main ul {
+    margin: 0 0 1.5em 2em;
+    line-height: 1.8;
+}
+
+.cards, .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25em;
+    margin-top: 1em;
+}
+
+.cards article, figure, .faq-item, .contact-card {
+    background-color: #f6eee4;
+    border: 1px solid #d4c0a8;
+    padding: 1em;
+    border-radius: 0.5em;
+}
+
+figure img, .cards img {
+    width: 100%;
+    border-radius: 0.4em;
+}
+
+figcaption {
+    margin-top: 0.5em;
+    font-size: 0.95em;
+    text-align: center;
+}
+
+video {
+    margin: 1em auto;
+    border: 0.2em solid #2a1f14;
+    border-radius: 0.5em;
+    background-color: #000;
+}
+
+/* Example of styling captions. Browser support can vary. */
+video::cue {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.75);
+    font-size: 1.1em;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1em;
+}
+
+caption {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+}
+
+th, td {
+    border: 1px solid #2a1f14;
+    padding: 0.75em;
+    text-align: left;
+}
+
+th {
+    background-color: #2a1f14;
+    color: #f6eee4;
+}
+
+tr:nth-child(even) {
+    background-color: #f6eee4;
+}
+
+form {
+    margin-top: 1em;
+}
+
+fieldset {
+    border: 1px solid #2a1f14;
+    padding: 1em;
+    border-radius: 0.5em;
+}
+
+legend {
+    font-weight: bold;
+    padding: 0 0.5em;
+}
+
+label {
+    display: block;
+    margin-top: 1em;
+}
+
+input, textarea {
+    display: block;
+    width: 95%;
+    padding: 0.6em;
+    border: 1px solid #2a1f14;
+    border-radius: 0.3em;
+}
+
+input[type="submit"] {
+    width: auto;
+    margin-top: 1em;
+    background-color: #2a1f14;
+    color: #f6eee4;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.85em;
+    background-color: #2a1f14;
+    color: #f6eee4;
+    padding: 1em;
+}
+
+footer a {
+    color: #f6eee4;
+}
+
+@media screen and (max-width: 768px) {
+    .cards, .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .tab-desk {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+        text-align: center;
+        padding: 1em;
+        background-color: #f6eee4;
+    }
+
+    .mobile h1 {
+        font-size: 2em;
+    }
+
+    .mobile h3 {
+        font-size: 1.1em;
+        margin-top: 0.5em;
+    }
+
+    nav li {
+        display: block;
+        border-top: 1px solid #f6eee4;
+    }
+
+    .cards, .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    table, tr, th, td {
+        font-size: 0.95em;
+    }
+}

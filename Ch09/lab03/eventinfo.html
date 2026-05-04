@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--
+    Group members: Jack Whitney
+    Filename: eventinfo.html
+    Date: 2026-05-02
+    Purpose: Permit the visitor to scroll through a calendar of events and search for event information.
+-->
+
+<head>
+    <title>CCSU Student Clubs - Event Calendar and Search</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/bluedevil-favicon-32x32.png">
+</head>
+
+<body>
+    <header>
+        <h1 class="centered">Find an Event</h1>
+        <p class="tab-desk centered">Make the Most of Your Life at CCSU!</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="clubinfo.html">Student Clubs</a></li>
+            <li><a href="eventinfo.html">Event Calendar</a></li>
+            <li><a href="request.html">Add a Club or Event</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Purpose: Give users the ability to scroll through a calendar of events. -->
+        <div id="hero" class="tab-desk">
+            <img class="centered" src="images/student-group-sitting.jpg" alt="group of students sitting against a wall">
+        </div>
+
+        <section id="studentevents">
+            <h2 class="centered">Student Events</h2>
+            <p class="centered">Please scroll through the calendar of student events to see what might pique your interest.</p>
+
+            <img class="centered" src="images/calendar.jpg" alt="scrollable calendar of student events">
+        </section>
+
+        <section id="event-table" class="tab-desk">
+            <h2 class="centered">Featured Events</h2>
+            <table>
+                <caption>Spring Club Event Schedule</caption>
+                <thead>
+                    <tr>
+                        <th>Club</th>
+                        <th>Event</th>
+                        <th>Date</th>
+                        <th>Time</th>
+                        <th>Location</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="2">All Clubs</td>
+                        <td>Club Fair</td>
+                        <td>May 2</td>
+                        <td>10:00 AM</td>
+                        <td>Student Center</td>
+                    </tr>
+                    <tr>
+                        <td>Spring Celebration</td>
+                        <td>May 16</td>
+                        <td>1:00 PM</td>
+                        <td>Courtyard</td>
+                    </tr>
+                    <tr>
+                        <td>Art Club</td>
+                        <td>Art Showcase</td>
+                        <td>May 6</td>
+                        <td>2:30 PM</td>
+                        <td>Room 112</td>
+                    </tr>
+                    <tr>
+                        <td>History Club</td>
+                        <td>History Trivia Day</td>
+                        <td>May 9</td>
+                        <td>3:00 PM</td>
+                        <td>Library</td>
+                    </tr>
+                    <tr>
+                        <td>Chem Club</td>
+                        <td>Chemistry Demo</td>
+                        <td>May 13</td>
+                        <td>2:45 PM</td>
+                        <td>Lab 301</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p class="tel-link"><a href="tel:8885551212">(888)&nbsp;555-1212</a></p>
+        <p><a class="email-link" href="mailto:studentclubs@ccsu.edu">studentclubs@ccsu.edu</a></p>
+        <p class="tab-desk">
+            <a href="http://www.ccsu.edu"><img class="centered" src="images/ccsu-logo.png" alt="CCSU Logo"></a>
+        </p>
+        <p class="mobile"><a href="http://www.ccsu.edu">www.ccsu.edu</a></p>
+    </footer>
+</body>
+</html>

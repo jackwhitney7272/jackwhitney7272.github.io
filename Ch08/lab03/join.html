@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Join a Club</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+    <link rel="stylesheet" href="css.css">
+    <!-- Jack Whitney
+         join.html
+         4/28/2026 -->
+</head>
+
+<body>
+    <header>
+        <h1>Join a School Club</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="artclub.html">Art Club</a></li>
+            <li><a href="historyclub.html">History Club</a></li>
+            <li><a href="chemclub.html">Chem Club</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="join.html">Join</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="intro">
+            <h2>Join a School Club</h2>
+            <p>Complete the form below to tell us which club interests you. Required fields are marked with an asterisk.</p>
+        </section>
+
+        <section class="form-section">
+            <h2>Student Interest Form</h2>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Student Information</legend>
+
+                    <label for="fname">First Name *</label>
+                    <input type="text" id="fname" name="fname" required>
+
+                    <label for="lname">Last Name *</label>
+                    <input type="text" id="lname" name="lname" required>
+
+                    <label for="email">School Email *</label>
+                    <input type="email" id="email" name="email" placeholder="student@email.com" required>
+
+                    <label for="grade">Grade Level</label>
+                    <select id="grade" name="grade">
+                        <option value="">Select Grade</option>
+                        <option value="freshman">Freshman</option>
+                        <option value="sophomore">Sophomore</option>
+                        <option value="junior">Junior</option>
+                        <option value="senior">Senior</option>
+                    </select>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Club Choices</legend>
+
+                    <label for="club">Club Interest</label>
+                    <select id="club" name="club">
+                        <option value="art">Art Club</option>
+                        <option value="history">History Club</option>
+                        <option value="chem">Chem Club</option>
+                        <option value="events">School Events Team</option>
+                    </select>
+
+                    <p class="form-label">Preferred Contact Method</p>
+                    <label class="choice"><input type="radio" name="contact" value="email" checked> Email</label>
+                    <label class="choice"><input type="radio" name="contact" value="phone"> Phone</label>
+
+                    <p class="form-label">Activities You Like</p>
+                    <label class="choice"><input type="checkbox" name="activity" value="meetings"> Weekly meetings</label>
+                    <label class="choice"><input type="checkbox" name="activity" value="projects"> Group projects</label>
+                    <label class="choice"><input type="checkbox" name="activity" value="events"> School events</label>
+
+                    <label for="startdate">Best Date to Start</label>
+                    <input type="date" id="startdate" name="startdate">
+
+                    <label for="message">Why do you want to join?</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Tell us about your interests."></textarea>
+                </fieldset>
+
+                <input type="submit" value="Submit Interest Form" class="submit-btn">
+            </form>
+        </section>
+
+        <aside class="server-summary">
+            <h2>Form Server Processing Summary</h2>
+            <p>To submit a form to a server, the form needs an action attribute that points to a server-side file or URL and a method attribute, usually post for sending private form data. Each form control needs a name attribute so the server can identify the submitted values. The server then uses a language or service such as PHP, Python, Node.js, ASP.NET, or a form-processing platform to validate the data, store it in a database, or send it by email. A real form should also use HTTPS, server-side validation, spam protection, and a confirmation message after the form is submitted.</p>
+        </aside>
+    </main>
+
+    <footer>
+        <p><a href="mailto:jack.whitney7272@gmail.com">jack.whitney7272@gmail.com</a></p>
+        <p><a href="https://www.ccsu.edu" target="_blank">Central University</a></p>
+    </footer>
+</body>
+</html>

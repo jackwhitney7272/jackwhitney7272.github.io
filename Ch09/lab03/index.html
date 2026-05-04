@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--
+    Group members: Jack Whitney
+    Filename: index.html
+    Date: 2026-05-02
+    Purpose: Provide visitors with student club information and add audio and video for the Chapter 9 Lab 3 project.
+-->
+
+<head>
+    <title>CCSU Student Clubs</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/bluedevil-favicon-32x32.png">
+</head>
+
+<body>
+    <header>
+        <h1 class="centered">CCSU Student Clubs</h1>
+        <p class="centered">Make the Most of Your Life at CCSU!</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="clubinfo.html">Student Clubs</a></li>
+            <li><a href="eventinfo.html">Event Calendar</a></li>
+            <li><a href="request.html">Add a Club or Event</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- The hero image appears for tablet and desktop viewports. -->
+        <div id="hero" class="tab-desk">
+            <img class="centered" src="images/student-group-sitting.jpg" alt="group of students sitting together with a laptop">
+        </div>
+
+        <div id="welcome">
+            <h2 class="centered">Welcome to the CCSU Student Clubs Website!</h2>
+            <p class="centered">Use this site to find clubs, review upcoming events, and learn how to get involved on campus.</p>
+        </div>
+
+        <!-- The list and calendar stack on mobile and appear side-by-side on larger screens. -->
+        <div id="clublist-and-calendar" class="grid">
+            <figure>
+                <img class="centered" src="images/clublist.jpg" alt="scrollable list of student clubs and organizations">
+            </figure>
+
+            <figure>
+                <img class="centered" src="images/calendar.jpg" alt="scrollable calendar of student events">
+            </figure>
+        </div>
+
+        <div id="spotlight">
+            <h2 class="centered">Club Spotlight</h2>
+            <p>Each month we highlight selected student clubs and their activities. This month's spotlight includes a welcome audio clip and a short student clubs video preview.</p>
+
+            <section id="spotlight1" class="media-card">
+                <h3 class="centered">CCSU Music Club</h3>
+                <p>The Music Club welcomes students who enjoy performances, rehearsals, and campus concerts. Listen to this short welcome clip about getting involved in student clubs.</p>
+
+                <audio controls="controls" class="centered">
+                    <source src="media/club-welcome.mp3" type="audio/mpeg">
+                    <source src="media/club-welcome.ogg" type="audio/ogg">
+                    <p>We're sorry, but your browser doesn't support audio playback.</p>
+                </audio>
+            </section>
+
+            <section id="spotlight2" class="video-container media-card">
+                <h3 class="centered">CCSU Student Clubs Video</h3>
+                <p>This short video promotes student clubs, campus events, and the benefits of getting involved. Captions and descriptions are included with WebVTT files.</p>
+
+                <video controls="controls" poster="media/clubs-poster.jpg" class="centered">
+                    <source src="media/club-promo.mp4" type="video/mp4">
+                    <source src="media/club-promo.webm" type="video/webm">
+                    <track src="media/captions.vtt" kind="captions" srclang="en" label="English Captions" default>
+                    <track src="media/descriptions.vtt" kind="descriptions" srclang="en" label="English Descriptions">
+                    <p>We're sorry, but your browser doesn't support video playback.</p>
+                </video>
+            </section>
+
+            <aside id="resources-used">
+                <h3 class="centered">Media Resources Used</h3>
+                <p>The video was created from the student images included in this project folder. The audio files were created for this project. The MP3, Ogg, MP4, and WebM files were exported and converted with FFmpeg.</p>
+            </aside>
+        </div>
+
+        <!-- This section appears only on larger viewports and gives more context about club participation. -->
+        <div id="benefits" class="tab-desk grid">
+            <figure id="studentplanning">
+                <img src="images/students-working-together.jpg" alt="students working together at a club meeting">
+            </figure>
+
+            <figure>
+                <p><a href="https://www.ucop.edu/institutional-research-academic-planning/_files/extra-curricular-participation-and-student-success.pdf">Studies</a> show that participating in student activities is positively related to student satisfaction, stronger campus connections, and academic success.</p>
+            </figure>
+        </div>
+    </main>
+
+    <footer>
+        <p class="tel-link"><a href="tel:8885551212">(888)&nbsp;555-1212</a></p>
+        <p><a class="email-link" href="mailto:studentclubs@ccsu.edu">studentclubs@ccsu.edu</a></p>
+        <p class="tab-desk">
+            <a href="http://www.ccsu.edu"><img class="centered" src="images/ccsu-logo.png" alt="CCSU Logo"></a>
+        </p>
+        <p class="mobile"><a href="http://www.ccsu.edu">www.ccsu.edu</a></p>
+    </footer>
+</body>
+</html>

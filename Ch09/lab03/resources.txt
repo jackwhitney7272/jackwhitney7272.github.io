@@ -1,0 +1,6 @@
+Media Resources Used
+
+Video: Created from the student images included in this project folder.
+Audio: Created for this student clubs project and saved in MP3 and Ogg formats.
+File conversions: FFmpeg was used to export/convert the audio and video files into MP3, Ogg, MP4, and WebM formats.
+Captions/descriptions: Created as WebVTT files and saved in the media folder.
