@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strike a Chord: Lessons</title>
+
+    <!--
+        Student Name: Jack Whitney
+        File Name: lessons.html
+        Date: 5/7/2026
+    -->
+
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" sizes="192x192" href="images/android-chrome-192.png">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+<div id="container">
+
+    <!-- Mobile Nav -->
+    <nav class="mobile-nav">
+        <div id="menu-links">
+            <a href="index.html">Home</a>
+            <a href="lessons.html">Lessons</a>
+            <a href="instructors.html">Instructors</a>
+            <a href="rentals.html">Rentals</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <a class="menu-icon" onclick="hamburger()">
+            <div>&#9776;</div>
+        </a>
+    </nav>
+
+    <header>
+        <h1><span class="tab-desk">&#9836;</span> Strike a Chord <span class="tab-desk">&#9836;</span></h1>
+    </header>
+
+    <nav class="tab-desk">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="lessons.html">Lessons</a></li>
+            <li><a href="instructors.html">Instructors</a></li>
+            <li><a href="rentals.html">Rentals</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Lessons</h2>
+
+        <section id="piano">
+            <h3>Piano Lessons</h3>
+            <img class="round" src="images/piano-lesson.jpg" alt="piano teacher helping a student play piano">
+            <p>Our piano lessons help students read music, understand rhythm, and build strong hand coordination.</p>
+            <h4>Sample piano lesson</h4>
+            <audio controls>
+                <source src="media/piano.mp3" type="audio/mpeg">
+                <source src="media/piano.ogg" type="audio/ogg">
+                <p>Your browser does not support the audio element.</p>
+            </audio>
+        </section>
+
+        <section id="guitar">
+            <h3>Guitar Lessons</h3>
+            <img class="round" src="images/child-guitar.jpg" alt="young student playing an acoustic guitar">
+            <p>Our guitar lessons teach chords, strumming, rhythm, and songs that help students stay motivated.</p>
+            <h4>Sample guitar lesson</h4>
+            <audio controls>
+                <source src="media/guitar.mp3" type="audio/mpeg">
+                <source src="media/guitar.ogg" type="audio/ogg">
+                <p>Your browser does not support the audio element.</p>
+            </audio>
+        </section>
+
+        <section id="violin">
+            <h3>Violin Lessons</h3>
+            <img class="round" src="images/woman-violin.jpg" alt="student playing the violin">
+            <p>Our violin lessons focus on posture, bow control, intonation, and confidence while performing.</p>
+            <h4>Sample violin lesson</h4>
+            <audio controls>
+                <source src="media/violin.mp3" type="audio/mpeg">
+                <source src="media/violin.ogg" type="audio/ogg">
+                <p>Your browser does not support the audio element.</p>
+            </audio>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Copyright 2026. All Rights Reserved.</p>
+        <p><a href="mailto:lessons@strikeachord.net">lessons@strikeachord.net</a></p>
+    </footer>
+
+</div>
+
+<script src="scripts/script.js"></script>
+
+</body>
+</html>

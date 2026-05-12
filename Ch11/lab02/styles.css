@@ -1,0 +1,497 @@
+/*
+Author: Jack Whitney
+Date: 5/11/2026
+File Name: styles.css
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, img, video, h1, h2, h3, h4, ul, li, section, aside, figure, figcaption, table, caption, tr, th, td, fieldset, legend, form, input, label, iframe, article, button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Style rules for images and video */
+img, video {
+    max-width: 100%;
+    display: block;
+}
+
+/* Style rules for skip navigation link */
+.skip {
+    position: absolute;
+    left: -999px;
+}
+
+.skip:focus {
+    color: #fff;
+    background-color: #2a1f14;
+    text-decoration: none;
+    padding: 0.5%;
+    top: auto;
+    left: auto;
+    right: 1px;
+    z-index: 1;
+}
+
+/* Style rule for box sizing applies to all elements */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f6eee4;
+    font-family: Verdana, Arial, sans-serif;
+    color: #2a1f14;
+}
+
+#wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Style rules for header content */
+header {
+    background-color: #f6eee4;
+}
+
+header img {
+    width: 100%;
+}
+
+.mobile h1, .mobile h3 {
+    text-align: center;
+    color: #2a1f14;
+}
+
+.mobile h1 {
+    padding: 3% 0 1%;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 2em;
+}
+
+.mobile h3 {
+    padding-bottom: 3%;
+    font-style: italic;
+}
+
+/* Style rules for navigation area */
+nav {
+    background-color: #2a1f14;
+}
+
+.mobile-nav {
+    position: relative;
+    min-height: 50px;
+}
+
+.mobile-nav a {
+    color: #fff;
+    text-align: center;
+    font-size: 2em;
+    text-decoration: none;
+    padding: 3%;
+    display: block;
+}
+
+.mobile-nav a.nav-icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0;
+}
+
+.nav-icon div {
+    height: 50px;
+    width: 50px;
+    background-color: #f6eee4;
+    color: #2a1f14;
+    line-height: 50px;
+}
+
+/* Style rules for main content */
+main {
+    padding: 4% 3%;
+    background-color: #fff;
+    overflow: auto;
+}
+
+main h2 {
+    color: #2a1f14;
+    margin-bottom: 0.75em;
+    font-family: Georgia, 'Times New Roman', serif;
+}
+
+main h3 {
+    color: #2a1f14;
+    margin: 0.75em 0 0.5em;
+}
+
+main p {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 1em;
+}
+
+main a {
+    color: #7b2d14;
+    font-weight: bold;
+}
+
+.action {
+    font-size: 1.15em;
+    color: #7b2d14;
+    font-weight: bold;
+}
+
+.mobile {
+    display: block;
+}
+
+.tab-desk, #nav-links {
+    display: none;
+}
+
+.intro {
+    margin-bottom: 1.5em;
+}
+
+.home-grid article, .cards article {
+    background-color: #f6eee4;
+    border-radius: 8px;
+    margin-bottom: 1.25em;
+    padding: 3%;
+}
+
+.home-grid img, .cards img, .highlight img {
+    border-radius: 8px;
+    margin-bottom: 0.75em;
+}
+
+#info {
+    background-color: #f6eee4;
+    padding: 4%;
+    border-left: 6px solid #7b2d14;
+    margin-top: 1em;
+}
+
+#info ul {
+    margin-left: 1.5em;
+    line-height: 1.7;
+}
+
+.highlight {
+    display: block;
+    background-color: #f6eee4;
+    padding: 4%;
+    border-radius: 8px;
+}
+
+/* Style rules for gallery */
+.gallery-grid figure {
+    position: relative;
+    margin: 0 auto 8%;
+    border: 5px solid #2a1f14;
+    max-width: 400px;
+}
+
+.gallery-grid figure img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+}
+
+figcaption {
+    position: absolute;
+    bottom: 0;
+    background: rgba(42, 31, 20, 0.75);
+    color: #fff;
+    width: 100%;
+    padding: 4% 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Style rules for table */
+table {
+    border: 1px solid #2a1f14;
+    border-collapse: collapse;
+    margin: 0 auto 2em;
+    width: 100%;
+}
+
+caption {
+    font-size: 1.4em;
+    font-weight: bold;
+    padding: 1%;
+    color: #2a1f14;
+}
+
+th, td {
+    border: 1px solid #2a1f14;
+    padding: 2%;
+    text-align: left;
+}
+
+th {
+    background-color: #2a1f14;
+    color: #fff;
+}
+
+tr:nth-child(odd) {
+    background-color: #f6eee4;
+}
+
+/* Style rules for FAQ page */
+.faq-list button {
+    display: block;
+    width: 100%;
+    padding: 3%;
+    margin-bottom: 3%;
+    background-color: #7b2d14;
+    color: #fff;
+    font-size: 1em;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#answer {
+    background-color: #f6eee4;
+    padding: 4%;
+    border-radius: 8px;
+    margin-top: 1em;
+}
+
+#answer h2 {
+    display: none;
+}
+
+/* Style rules for contact and form */
+#contact, #form h2 {
+    text-align: center;
+}
+
+.tel-link a {
+    background-color: #2a1f14;
+    color: #fff;
+    text-decoration: none;
+    padding: 2% 4%;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+.map {
+    border: 5px solid #2a1f14;
+    width: 95%;
+    height: 300px;
+}
+
+fieldset, input {
+    margin-bottom: 2%;
+}
+
+fieldset {
+    border: 2px solid #2a1f14;
+    padding: 3%;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #2a1f14;
+}
+
+label {
+    display: block;
+    padding-top: 3%;
+    text-align: left;
+}
+
+input {
+    border: 1px solid #2a1f14;
+    padding: 2%;
+    width: 100%;
+}
+
+input[type="checkbox"] {
+    width: auto;
+}
+
+form #submit {
+    margin: 0 auto;
+    display: block;
+    padding: 3%;
+    background-color: #7b2d14;
+    font-size: 1em;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+/* Style rules for footer content */
+footer {
+    text-align: center;
+    font-size: 0.85em;
+    clear: left;
+    padding: 3% 0;
+    background-color: #2a1f14;
+    color: #fff;
+}
+
+footer p {
+    margin-bottom: 1em;
+}
+
+footer a {
+    color: #f6eee4;
+    text-decoration: underline;
+}
+
+.social img {
+    display: inline-block;
+    padding: 4%;
+}
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 620px) {
+    .tab-desk {
+        display: block;
+    }
+
+    .mobile, .mobile-nav {
+        display: none;
+    }
+
+    nav ul {
+        list-style-type: none;
+        text-align: center;
+    }
+
+    nav li {
+        display: inline-block;
+        border-right: 1px solid #f6eee4;
+    }
+
+    nav li:last-child {
+        border-right: none;
+    }
+
+    nav li a {
+        display: block;
+        color: #fff;
+        text-align: center;
+        padding: 0.6em 1.2em;
+        text-decoration: none;
+        font-size: 1em;
+    }
+
+    .home-grid, .cards, .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .home-grid article, .cards article {
+        margin-bottom: 0;
+    }
+
+    .gallery-grid figure {
+        margin-bottom: 0;
+    }
+
+    .highlight {
+        display: grid;
+        grid-template-columns: 40% auto;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .map {
+        width: 80%;
+        height: 400px;
+    }
+
+    /* Tablet Viewport: Style rule for form element */
+    form {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    /* Tablet Viewport: Style rules for footer area */
+    footer {
+        overflow: auto;
+    }
+
+    .copyright {
+        float: left;
+        width: 65%;
+    }
+
+    .social {
+        float: right;
+        width: 25%;
+    }
+}
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 1000px) {
+    #wrapper {
+        width: 90%;
+    }
+
+    nav li a {
+        padding: 0.75em 2.2em;
+        transition: transform 0.3s ease;
+    }
+
+    nav li a:hover {
+        color: #e4d8c8;
+        transform: scale(1.1);
+    }
+
+    main {
+        padding: 3% 4% 5%;
+    }
+
+    .home-grid, .cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    table {
+        width: 85%;
+    }
+
+    .form-grid {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 20px;
+    }
+
+    .btn {
+        grid-column: 1 / span 2;
+    }
+}
+
+/* Media Query for Large Desktop Viewport */
+@media screen and (min-width: 1500px) {
+    #wrapper {
+        width: 80%;
+    }
+}
+
+/* Media Query for Print */
+@media print {
+    body {
+        background-color: #fff;
+        color: #000;
+    }
+
+    nav, .mobile-nav, .tab-desk, .social, .skip {
+        display: none;
+    }
+}

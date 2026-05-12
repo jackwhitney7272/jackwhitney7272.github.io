@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--
+    Group members: Jack Whitney
+    Filename: clubinfo.html
+    Date: 2026-05-11
+    Purpose: Student Clubs and Events Website page updated for SEO, social media links, skip navigation, and minified CSS.
+-->
+
+<head>
+    <title>Student Club Search | CCSU Student Clubs</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Search for CCSU student clubs and organizations by club name, interest, or activity.">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/styles.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" sizes="32x32" href="images/bluedevil-favicon-32x32.png">
+</head>
+
+<body>
+    <!-- Skip to Content Link -->
+    <a class="skip" href="#content">Skip to Content</a>
+
+    <header>
+        <h1 class="centered animate-title">Find a Club</h1>
+        <p class="tab-desk centered">Make the Most of Your Life at CCSU!</p>
+    </header>
+
+
+<nav class="mobile-nav">
+    <div id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="clubinfo.html">Student Clubs</a>
+        <a href="eventinfo.html">Event Calendar</a>
+        <a href="request.html">Add a Club or Event</a>
+        <a href="contact.html">Contact Us</a>
+    </div>
+    <a class="nav-icon" onclick="hamburger()" aria-label="Open navigation menu">
+        <div id="icon">&#9776;</div>
+    </a>
+</nav>
+
+<nav class="tab-desk">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="clubinfo.html">Student Clubs</a></li>
+        <li><a href="eventinfo.html">Event Calendar</a></li>
+        <li><a href="request.html">Add a Club or Event</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+</nav>
+
+    <main id="content">
+
+<div id="hero" class="tab-desk">
+    <img class="centered interactive-img" src="images/student-group-sitting.jpg" alt="group of students sitting against a wall">
+</div>
+
+<div class="grid page-grid">
+    <figure>
+        <img class="centered interactive-img" src="images/clublist.jpg" alt="scrollable list of student clubs and organizations">
+    </figure>
+
+    <form action="#" method="post" onsubmit="clubSearch(); return false;">
+        <fieldset>
+            <legend>Club Search</legend>
+
+            <label for="cDesc">Please enter any search keywords, such as part of a club name.</label>
+            <textarea id="cDesc" name="cDesc" rows="4" cols="60"></textarea>
+        </fieldset>
+
+        <input type="submit" id="submit" value="Submit Search" class="btn">
+        <p id="search-result" class="result-text"></p>
+    </form>
+</div>
+
+<section class="info-box">
+    <h2>Popular Club Categories</h2>
+    <ul>
+        <li>Academic and honors clubs</li>
+        <li>Arts, music, and performance groups</li>
+        <li>Volunteer and service organizations</li>
+        <li>Student government and leadership groups</li>
+    </ul>
+</section>
+
+    </main>
+
+
+<footer>
+    <div class="copyright">
+        <p class="tel-link"><a href="tel:8885551212">(888)&nbsp;555-1212</a></p>
+        <p><a class="email-link" href="mailto:studentclubs@ccsu.edu">studentclubs@ccsu.edu</a></p>
+        <p class="tab-desk">
+            <a href="http://www.ccsu.edu"><img class="centered ccsu-footer-logo" src="images/ccsu-logo.png" alt="CCSU Logo"></a>
+        </p>
+        <p class="mobile centered"><a href="http://www.ccsu.edu">www.ccsu.edu</a></p>
+    </div>
+    <div class="social">
+        <a href="https://www.facebook.com" target="_blank" rel="noopener"><img src="images/facebook-logo.png" alt="Facebook logo"></a>
+        <a href="https://www.twitter.com" target="_blank" rel="noopener"><img src="images/twitter-logo.png" alt="Twitter logo"></a>
+    </div>
+</footer>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>

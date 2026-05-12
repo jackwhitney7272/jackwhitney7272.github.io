@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!--
+    Group members: Jack Whitney
+    File Name: clubinfo.html
+    Date: 2026-05-12
+    Purpose: Bootstrap Student Clubs and Events Website.
+-->
+<html lang="en">
+<head>
+    <title>Student Clubs | CCSU Student Clubs</title>
+    <meta name="description" content="Browse CCSU student clubs and organizations by interest area.">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/bluedevil-favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <a class="skip-link" href="#content">Skip to Content</a>
+
+    <!-- Bootstrap Navigation bar -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-ccsu fixed-top">
+        <a class="navbar-brand font-weight-bold" href="index.html">CCSU Student Clubs</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="clubinfo.html">Student Clubs <span class="sr-only">(current)</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="eventinfo.html">Event Calendar</a></li>
+                    <li class="nav-item"><a class="nav-link" href="request.html">Add a Club or Event</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- Page Header -->
+    <header class="page-header text-white py-5 mb-4">
+        <div class="container">
+            <h1 class="display-4 font-weight-bold animate-title">Student Clubs</h1>
+            <p class="lead mb-0">Student clubs, events, and campus involvement at CCSU.</p>
+        </div>
+    </header>
+
+
+    <!-- Main Content Area -->
+    <main id="content" class="container my-5">
+        <section class="row align-items-center mb-5">
+            <div class="col-lg-7 mb-4 mb-lg-0">
+                <h2 class="text-primary font-weight-bold">Student Clubs and Organizations</h2>
+                <p class="lead">Use this page to browse clubs and find the type of activity that fits your interests.</p>
+                <div class="input-group mb-3">
+                    <input type="text" id="clubSearchInput" class="form-control" placeholder="Enter a club name or keyword" aria-label="Search clubs">
+                    <div class="input-group-append">
+                        <button class="btn btn-primary" type="button" onclick="clubSearch()">Search</button>
+                    </div>
+                </div>
+                <p id="search-result" class="result-text"></p>
+            </div>
+            <div class="col-lg-5">
+                <img src="images/student-group-sitting.jpg" alt="students sitting together by a wall" class="img-fluid rounded shadow image-hover">
+            </div>
+        </section>
+
+        <section class="row">
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card h-100 shadow-sm club-card"><div class="card-body"><h3 class="h4 text-primary font-weight-bold">Art Club</h3><p>Painting, drawing, design, and student art displays.</p></div></div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card h-100 shadow-sm club-card"><div class="card-body"><h3 class="h4 text-primary font-weight-bold">Chem Club</h3><p>Experiments, chemistry demonstrations, and science fair prep.</p></div></div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card h-100 shadow-sm club-card"><div class="card-body"><h3 class="h4 text-primary font-weight-bold">History Club</h3><p>Trivia events, discussions, and museum projects.</p></div></div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card h-100 shadow-sm club-card"><div class="card-body"><h3 class="h4 text-primary font-weight-bold">Music Club</h3><p>Student performances, rehearsal groups, and concerts.</p></div></div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card h-100 shadow-sm club-card"><div class="card-body"><h3 class="h4 text-primary font-weight-bold">Student Government</h3><p>Leadership, campus planning, and school events.</p></div></div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card h-100 shadow-sm club-card"><div class="card-body"><h3 class="h4 text-primary font-weight-bold">Volunteer Club</h3><p>Service projects and community outreach.</p></div></div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card h-100 shadow-sm club-card"><div class="card-body"><h3 class="h4 text-primary font-weight-bold">Scandinavian Club</h3><p>Culture, food, music, and dance events.</p></div></div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card h-100 shadow-sm club-card"><div class="card-body"><h3 class="h4 text-primary font-weight-bold">Opera Club</h3><p>Concerts, auditions, and student performances.</p></div></div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="card h-100 shadow-sm club-card"><div class="card-body"><h3 class="h4 text-primary font-weight-bold">Outdoor Club</h3><p>Hikes, recreation, and outdoor campus activities.</p></div></div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="jumbotron jumbotron-fluid bg-ccsu text-white text-center p-5 mb-0">
+        <div class="container">
+            <img src="images/ccsu-logo.png" alt="CCSU Student Clubs logo" class="img-fluid footer-logo mx-auto mb-3">
+            <p class="mb-2">&copy; Copyright 2026. All Rights Reserved.</p>
+            <p class="mb-3"><a class="text-white" href="mailto:studentclubs@ccsu.edu">studentclubs@ccsu.edu</a> &nbsp; | &nbsp; <a class="text-white" href="tel:8885551212">(888) 555-1212</a></p>
+            <a href="https://www.facebook.com" target="_blank" rel="noopener"><img src="images/facebook-logo.png" alt="Facebook logo" class="social-icon mr-3"></a>
+            <a href="https://www.twitter.com" target="_blank" rel="noopener"><img src="images/twitter-logo.png" alt="Twitter logo" class="social-icon"></a>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+</html>

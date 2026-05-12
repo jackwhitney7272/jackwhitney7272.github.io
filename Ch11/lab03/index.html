@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--
+    Group members: Jack Whitney
+    Filename: index.html
+    Date: 2026-05-11
+    Purpose: Student Clubs and Events Website page updated for SEO, social media links, skip navigation, and minified CSS.
+-->
+
+<head>
+    <title>Student Clubs and Events | CCSU Student Clubs</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Find CCSU student clubs, events, calendars, and ways to get involved on campus.">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/styles.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" sizes="32x32" href="images/bluedevil-favicon-32x32.png">
+</head>
+
+<body>
+    <!-- Skip to Content Link -->
+    <a class="skip" href="#content">Skip to Content</a>
+
+    <header>
+        <h1 class="centered animate-title">CCSU Student Clubs and Events</h1>
+        <p class="tab-desk centered">Make the Most of Your Life at CCSU!</p>
+    </header>
+
+
+<nav class="mobile-nav">
+    <div id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="clubinfo.html">Student Clubs</a>
+        <a href="eventinfo.html">Event Calendar</a>
+        <a href="request.html">Add a Club or Event</a>
+        <a href="contact.html">Contact Us</a>
+    </div>
+    <a class="nav-icon" onclick="hamburger()" aria-label="Open navigation menu">
+        <div id="icon">&#9776;</div>
+    </a>
+</nav>
+
+<nav class="tab-desk">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="clubinfo.html">Student Clubs</a></li>
+        <li><a href="eventinfo.html">Event Calendar</a></li>
+        <li><a href="request.html">Add a Club or Event</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+</nav>
+
+    <main id="content">
+
+<div id="hero" class="tab-desk">
+    <img class="centered interactive-img" src="images/group-of-students.jpg" alt="group of college students sitting together outside">
+</div>
+
+<div class="grid page-grid">
+    <section id="welcome">
+        <h2>Welcome to CCSU Student Clubs</h2>
+        <p>Student clubs are a great way to meet people, learn new skills, and get involved on campus. This website helps students find clubs, view events, and submit new club or event requests.</p>
+        <p>Explore the club list, check the event calendar, or contact the student clubs team to learn more.</p>
+    </section>
+
+    <section id="weekend">
+        <h2>Campus Life Reminder</h2>
+        <p id="enjoy">Click the button below for a quick campus life message.</p>
+        <button class="btn" onclick="weekendMessage()">Show Message</button>
+    </section>
+</div>
+
+<section id="spotlight">
+    <h2>Featured Student Activity</h2>
+    <p>Clubs host meetings, art shows, performances, volunteer projects, and student leadership events throughout the semester.</p>
+    <figure>
+        <img class="centered interactive-img" src="images/students-working-together.jpg" alt="students working together at a table">
+    </figure>
+    <button class="btn" onclick="spotlightMessage()">View Club Spotlight</button>
+    <p id="spotlight-result" class="result-text"></p>
+</section>
+
+<section class="info-box">
+    <h2>Student Event Audio</h2>
+    <p>Use the audio player below as a sample media feature for the student clubs website.</p>
+    <audio controls>
+        <source src="media/Gathering-March.mp3" type="audio/mpeg">
+        <source src="media/Gathering-March.ogg" type="audio/ogg">
+        <p>Your browser does not support the audio element.</p>
+    </audio>
+</section>
+
+    </main>
+
+
+<footer>
+    <div class="copyright">
+        <p class="tel-link"><a href="tel:8885551212">(888)&nbsp;555-1212</a></p>
+        <p><a class="email-link" href="mailto:studentclubs@ccsu.edu">studentclubs@ccsu.edu</a></p>
+        <p class="tab-desk">
+            <a href="http://www.ccsu.edu"><img class="centered ccsu-footer-logo" src="images/ccsu-logo.png" alt="CCSU Logo"></a>
+        </p>
+        <p class="mobile centered"><a href="http://www.ccsu.edu">www.ccsu.edu</a></p>
+    </div>
+    <div class="social">
+        <a href="https://www.facebook.com" target="_blank" rel="noopener"><img src="images/facebook-logo.png" alt="Facebook logo"></a>
+        <a href="https://www.twitter.com" target="_blank" rel="noopener"><img src="images/twitter-logo.png" alt="Twitter logo"></a>
+    </div>
+</footer>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>

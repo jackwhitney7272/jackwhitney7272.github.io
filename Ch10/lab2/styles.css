@@ -1,0 +1,462 @@
+/*
+Author: Jack Whitney
+Date: 5/7/2026
+File Name: styles.css
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, img, h1, h2, h3, ul, li, section, article, aside, figure, figcaption, table, caption, tr, th, td, form, fieldset, legend, input, label, p {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Style rule for box sizing */
+* {
+    box-sizing: border-box;
+}
+
+/* Style rule for images */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Style rules for body and wrapper */
+body {
+    background-color: #f6eee4;
+    color: #2a1f14;
+    font-family: Verdana, Arial, sans-serif;
+}
+
+#wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Style rules for header content */
+header {
+    background-color: #f6eee4;
+    min-height: 86px;
+}
+
+header img {
+    width: 100%;
+}
+
+.mobile h1 {
+    color: #2a1f14;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 1.8em;
+    padding: 2% 0 0 2%;
+    margin: 2% 0 0 3%;
+}
+
+.mobile h3 {
+    color: #2a1f14;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 1em;
+    padding: 1% 0 3% 6%;
+    font-style: italic;
+}
+
+/* Style rules for navigation area */
+nav {
+    background-color: #2a1f14;
+}
+
+.mobile-nav {
+    background-color: #2a1f14;
+    min-height: 56px;
+    position: relative;
+}
+
+.mobile-nav a {
+    color: #fff;
+    text-align: center;
+    font-size: 2em;
+    text-decoration: none;
+    padding: 3%;
+    display: block;
+}
+
+.mobile-nav a.nav-icon {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #f6eee4;
+    padding: 2%;
+}
+
+.nav-icon div {
+    height: 40px;
+    width: 40px;
+    color: #2a1f14;
+}
+
+/* Mobile viewport rules */
+.tab-desk, .desktop, #nav-links {
+    display: none;
+}
+
+main {
+    background-color: #fff;
+    padding: 4%;
+}
+
+main h2 {
+    color: #2a1f14;
+    font-family: Georgia, 'Times New Roman', serif;
+    margin-bottom: 2%;
+}
+
+main h3 {
+    color: #2a1f14;
+    font-family: Georgia, 'Times New Roman', serif;
+    margin: 3% 0 2%;
+}
+
+main p {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 1em;
+}
+
+.intro {
+    background-color: #f6eee4;
+    border-left: 6px solid #8b3a22;
+    padding: 4%;
+    margin-bottom: 5%;
+}
+
+.cards article {
+    background-color: #f6eee4;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(42, 31, 20, 0.18);
+    margin-bottom: 5%;
+    overflow: hidden;
+}
+
+.cards article h3, .cards article p {
+    padding: 0 4%;
+}
+
+.cards article p {
+    padding-bottom: 4%;
+}
+
+.cards article img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+#info {
+    background-color: #f6eee4;
+    padding: 4%;
+    margin-top: 4%;
+}
+
+#info ul {
+    margin-left: 7%;
+    line-height: 1.7;
+}
+
+.gallery-grid figure {
+    position: relative;
+    margin-bottom: 5%;
+    border: 6px solid #2a1f14;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+}
+
+figcaption {
+    position: absolute;
+    bottom: 0;
+    background: rgba(42, 31, 20, 0.75);
+    color: #fff;
+    width: 100%;
+    padding: 3%;
+    text-align: center;
+    font-weight: bold;
+}
+
+#contact, #form {
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.tel-link a {
+    color: #fff;
+    background-color: #2a1f14;
+    text-decoration: none;
+    display: block;
+    width: 80%;
+    margin: 0 auto 4%;
+    padding: 3%;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+#questions p {
+    cursor: pointer;
+    background-color: #f6eee4;
+    border-left: 6px solid #8b3a22;
+    margin: 2% auto;
+    padding: 3%;
+    font-weight: bold;
+}
+
+#answer {
+    text-align: center;
+    font-weight: bold;
+    width: 80%;
+    margin: 4% auto 0;
+    min-height: 120px;
+}
+
+#answer h2 {
+    display: none;
+}
+
+/* Style rules for table */
+.table-container {
+    overflow-x: auto;
+    margin: 4% 0;
+}
+
+table {
+    border: 1px solid #2a1f14;
+    border-collapse: collapse;
+    width: 100%;
+    background-color: #fff;
+}
+
+caption {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 2%;
+    color: #2a1f14;
+}
+
+th, td {
+    border: 1px solid #2a1f14;
+    padding: 3%;
+    text-align: left;
+}
+
+th {
+    background-color: #2a1f14;
+    color: #fff;
+}
+
+tr:nth-child(odd) {
+    background-color: #f6eee4;
+}
+
+/* Style rules for form elements */
+form {
+    background-color: #f6eee4;
+    padding: 4%;
+    border-radius: 8px;
+    text-align: left;
+}
+
+fieldset {
+    border: 2px solid #2a1f14;
+    padding: 4%;
+    margin-bottom: 4%;
+}
+
+legend {
+    font-weight: bold;
+    padding: 0 2%;
+}
+
+label {
+    display: block;
+    padding-top: 3%;
+}
+
+input {
+    border: 1px solid #2a1f14;
+    padding: 2%;
+    width: 100%;
+    margin-top: 1%;
+}
+
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 2%;
+}
+
+.btn {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    padding: 3%;
+    background-color: #2a1f14;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+/* Style rules for footer */
+footer {
+    background-color: #2a1f14;
+    color: #f6eee4;
+    text-align: center;
+    padding: 4% 2%;
+    font-size: 0.85em;
+}
+
+footer a {
+    color: #f6eee4;
+}
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 620px) {
+    .tab-desk, .desktop {
+        display: block;
+    }
+
+    .mobile, .mobile-nav {
+        display: none;
+    }
+
+    /* Tablet Viewport: Style rules for nav area */
+    nav ul {
+        list-style-type: none;
+        text-align: center;
+    }
+
+    nav li {
+        display: inline-block;
+        font-family: Georgia, 'Times New Roman', serif;
+        font-weight: bold;
+    }
+
+    nav li a {
+        display: block;
+        color: #f6eee4;
+        text-align: center;
+        text-decoration: none;
+        padding: 0.7em 1.2em;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3%;
+    }
+
+    .cards article {
+        margin-bottom: 0;
+    }
+
+    .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3%;
+    }
+
+    .gallery-grid figure {
+        margin-bottom: 0;
+    }
+
+    .gallery-grid img {
+        height: 250px;
+    }
+
+    form {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .tel-link a {
+        width: 45%;
+    }
+}
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 1000px) {
+    #wrapper {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    nav li a {
+        padding: 0.9em 1.9em;
+        font-size: 1.05em;
+    }
+
+    nav li a:hover {
+        color: #2a1f14;
+        background-color: #f6eee4;
+    }
+
+    main {
+        padding: 3% 4% 5%;
+    }
+
+    .intro {
+        padding: 3%;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2%;
+    }
+
+    .gallery-grid img {
+        height: 220px;
+    }
+
+    .form-grid {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 3%;
+    }
+
+    .btn {
+        grid-column: 1 / span 2;
+        width: 30%;
+    }
+
+    table {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+/* Media Query for Large Desktop Viewport */
+@media screen and (min-width: 1500px) {
+    #wrapper {
+        width: 80%;
+    }
+
+    .gallery-grid img {
+        height: 250px;
+    }
+}
+
+/* Media Query for Print */
+@media print {
+    body {
+        background-color: #fff;
+        color: #000;
+    }
+
+    nav, .mobile-nav, .tab-desk, .mobile {
+        display: none;
+    }
+
+    main {
+        background-color: #fff;
+    }
+}

@@ -1,0 +1,121 @@
+/*
+    Group members: Jack Whitney
+    File Name: styles.css
+    Date: 2026-05-12
+    Purpose: Custom styles for the Bootstrap Student Clubs and Events Website.
+*/
+
+body {
+    background-color: #eef3f7;
+    color: #083b66;
+    font-family: "DM Sans", Verdana, Arial, sans-serif;
+    padding-top: 56px;
+}
+
+h1, h2, h3, .navbar-brand {
+    font-family: "DM Sans", Verdana, Arial, sans-serif;
+}
+
+.bg-ccsu {
+    background-color: #043d70;
+}
+
+.skip-link {
+    position: absolute;
+    left: -999px;
+    top: 0;
+    background-color: #ffcc00;
+    color: #043d70;
+    padding: 0.75rem;
+    z-index: 2000;
+    font-weight: 700;
+}
+
+.skip-link:focus {
+    left: 1rem;
+}
+
+.hero-jumbotron {
+    background-image: linear-gradient(rgba(4, 61, 112, 0.62), rgba(4, 61, 112, 0.62)), url("../images/group-of-students.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 520px;
+    display: flex;
+    align-items: center;
+}
+
+.page-header {
+    background: linear-gradient(135deg, #043d70, #0b63a8);
+}
+
+.hero-text {
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.55);
+}
+
+.card, .rounded {
+    border-radius: 0.9rem !important;
+}
+
+.card-img-top {
+    height: 220px;
+    object-fit: cover;
+}
+
+.club-card {
+    border-left: 8px solid #0b63a8;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.club-card:hover, .image-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.75rem 1.5rem rgba(4, 61, 112, 0.18) !important;
+}
+
+.image-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.result-text {
+    color: #043d70;
+    font-weight: 700;
+}
+
+.table caption {
+    caption-side: top;
+    font-size: 1.4rem;
+}
+
+.footer-logo {
+    max-width: 360px;
+}
+
+.social-icon {
+    width: 44px;
+    height: 44px;
+}
+
+@keyframes slideFade {
+    from {
+        opacity: 0;
+        transform: translateY(-18px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-title {
+    animation: slideFade 0.9s ease-out;
+}
+
+@media (max-width: 767px) {
+    .hero-jumbotron {
+        min-height: 460px;
+        text-align: center;
+    }
+
+    .display-4 {
+        font-size: 2.45rem;
+    }
+}

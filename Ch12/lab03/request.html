@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!--
+    Group members: Jack Whitney
+    File Name: request.html
+    Date: 2026-05-12
+    Purpose: Bootstrap Student Clubs and Events Website.
+-->
+<html lang="en">
+<head>
+    <title>Add a Club or Event | CCSU Student Clubs</title>
+    <meta name="description" content="Submit a student club or event request for the CCSU Student Clubs website.">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/bluedevil-favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <a class="skip-link" href="#content">Skip to Content</a>
+
+    <!-- Bootstrap Navigation bar -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-ccsu fixed-top">
+        <a class="navbar-brand font-weight-bold" href="index.html">CCSU Student Clubs</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="clubinfo.html">Student Clubs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="eventinfo.html">Event Calendar</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="request.html">Add a Club or Event <span class="sr-only">(current)</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- Page Header -->
+    <header class="page-header text-white py-5 mb-4">
+        <div class="container">
+            <h1 class="display-4 font-weight-bold animate-title">Add a Club or Event</h1>
+            <p class="lead mb-0">Student clubs, events, and campus involvement at CCSU.</p>
+        </div>
+    </header>
+
+
+    <!-- Main Content Area -->
+    <main id="content" class="container my-5">
+        <section class="row mb-5">
+            <div class="col-lg-5 mb-4 mb-lg-0">
+                <h2 class="text-primary font-weight-bold">Add a Club or Event</h2>
+                <p class="lead">Use this form to submit a new club listing, meeting, or campus activity.</p>
+                <img src="images/student-with-folder.jpg" alt="student smiling and holding a green folder" class="img-fluid rounded shadow image-hover mt-3">
+            </div>
+            <div class="col-lg-7">
+                <form class="bg-white rounded shadow-sm p-4" onsubmit="requestMessage(); return false;">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="firstName">First Name</label>
+                            <input type="text" class="form-control" id="firstName" name="firstName" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" class="form-control" id="lastName" name="lastName" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="requestType">Request Type</label>
+                        <select id="requestType" class="form-control" name="requestType">
+                            <option>Add a new club</option>
+                            <option>Add a student event</option>
+                            <option>Update existing information</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Club or Event Details</label>
+                        <textarea id="message" class="form-control" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit Request</button>
+                    <p id="request-result" class="result-text mt-3"></p>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="jumbotron jumbotron-fluid bg-ccsu text-white text-center p-5 mb-0">
+        <div class="container">
+            <img src="images/ccsu-logo.png" alt="CCSU Student Clubs logo" class="img-fluid footer-logo mx-auto mb-3">
+            <p class="mb-2">&copy; Copyright 2026. All Rights Reserved.</p>
+            <p class="mb-3"><a class="text-white" href="mailto:studentclubs@ccsu.edu">studentclubs@ccsu.edu</a> &nbsp; | &nbsp; <a class="text-white" href="tel:8885551212">(888) 555-1212</a></p>
+            <a href="https://www.facebook.com" target="_blank" rel="noopener"><img src="images/facebook-logo.png" alt="Facebook logo" class="social-icon mr-3"></a>
+            <a href="https://www.twitter.com" target="_blank" rel="noopener"><img src="images/twitter-logo.png" alt="Twitter logo" class="social-icon"></a>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+</html>

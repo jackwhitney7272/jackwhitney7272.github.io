@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!--
+    Student Name: Jack Whitney
+    File Name: index.html
+    Date: 5/7/2026
+-->
+<html lang="en">
+<head>
+    <title>Wild Rescues: Home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" sizes="192x192" href="images/android-chrome-192.png">
+</head>
+<body>
+    <div id="wrapper">
+        <!-- Mobile Nav -->
+        <nav class="mobile-nav">
+            <div id="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="partnership.html">Partnership</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="faqs.html">FAQs</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+            <a class="nav-icon" onclick="hamburger()">
+                <div id="icon">&#9776;</div>
+            </a>
+        </nav>
+
+        <header>
+            <div class="tab-desk">
+                <a href="index.html"><img src="images/baby-hawk.jpg" alt="Wild Rescues banner with hawk"></a>
+            </div>
+            <div class="mobile">
+                <h1>&#128062; Wild Rescues</h1>
+                <h3>Rescue. Rehabilitate. Release.</h3>
+            </div>
+        </header>
+
+        <nav class="tab-desk">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="partnership.html">Partnership</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="faqs.html">FAQs</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <main id="home">
+            <section class="intro">
+                <h2>Welcome to Wild Rescues</h2>
+                <p>Wild Rescues is a nonprofit organization dedicated to rescuing, rehabilitating, and releasing local wildlife.</p>
+                <p>Our mission is to provide care for injured, neglected, and orphaned animals so they can return to safe environments whenever possible.</p>
+            </section>
+
+            <section class="cards">
+                <article>
+                    <img src="images/hawk.jpg" alt="rescued hawk on a gloved hand">
+                    <h3>Rescue</h3>
+                    <p>We respond when animals are hurt, orphaned, or in unsafe situations.</p>
+                </article>
+                <article>
+                    <img src="images/baby-raccoons.jpg" alt="rescued baby raccoons being held">
+                    <h3>Rehabilitate</h3>
+                    <p>Our volunteers help animals regain strength and prepare for release.</p>
+                </article>
+                <article>
+                    <img src="images/tortoise-pyramid.jpg" alt="rescued tortoise walking outside">
+                    <h3>Release</h3>
+                    <p>When animals are ready, we return them to safe natural habitats.</p>
+                </article>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; Copyright 2026. All Rights Reserved.</p>
+            <p><a href="mailto:contact@wildrescues.net">contact@wildrescues.net</a></p>
+        </footer>
+    </div>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
