@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<!--
+    Group members: Jack Whitney
+    Filename: eventinfo.html
+    Date: 2026-05-07
+    Purpose: Provide visitors with a calendar of student club events.
+    Lab 3 Changes: Added hamburger navigation, animation, transform effects, and a JavaScript event reminder function.
+-->
+
+<head>
+
+    <title>CCSU Student Clubs - Event Calendar</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/bluedevil-favicon-32x32.png">
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1 class="centered animate-title">Event Calendar</h1>
+        <p class="tab-desk centered">Make the Most of Your Life at CCSU!</p>
+
+    </header>
+
+    <!-- Mobile Nav: Lab 3 change, hamburger menu added for mobile viewports. -->
+
+    <nav class="mobile-nav">
+        <div id="nav-links">
+            <a href="index.html">Home</a>
+            <a href="clubinfo.html">Student Clubs</a>
+            <a href="eventinfo.html">Event Calendar</a>
+            <a href="request.html">Add a Club or Event</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <a class="nav-icon" onclick="hamburger()" aria-label="Open navigation menu">
+            <div id="icon">&#9776;</div>
+        </a>
+    </nav>
+
+    <!-- Tablet / Desktop Nav -->
+
+    <nav class="tab-desk">
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="clubinfo.html">Student Clubs</a></li>
+            <li><a href="eventinfo.html">Event Calendar</a></li>
+            <li><a href="request.html">Add a Club or Event</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+
+    </nav>
+
+    <main>
+        <div id="hero" class="tab-desk">
+            <img class="centered interactive-img" src="images/student-with-folder.jpg" alt="student smiling and holding a folder on campus">
+        </div>
+
+        <div id="calendar-page" class="grid page-grid">
+            <figure>
+                <img class="centered interactive-img" src="images/calendar.jpg" alt="student events calendar for May 2026">
+            </figure>
+
+            <section class="info-box">
+                <h2>Upcoming Events</h2>
+                <ul>
+                    <li>May 2: Club Fair</li>
+                    <li>May 6: Art Show</li>
+                    <li>May 9: Trivia</li>
+                    <li>May 13: Chem Demo</li>
+                    <li>May 16: Spring Event</li>
+                </ul>
+
+                <!-- Lab 3 change: This button calls another function from script.js. -->
+                <p><button type="button" class="btn" onclick="eventReminder()">Show Event Reminder</button></p>
+                <p id="event-result" class="result-text"></p>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p class="tel-link"><a href="tel:8885551212">(888)&nbsp;555-1212</a></p>
+        <p><a class="email-link" href="mailto:studentclubs@ccsu.edu">studentclubs@ccsu.edu</a></p>
+        <p class="tab-desk">
+            <a href="http://www.ccsu.edu"><img class="centered" src="images/ccsu-logo.png" alt="CCSU Logo"></a>
+        </p>
+        <p class="mobile centered"><a href="http://www.ccsu.edu">www.ccsu.edu</a></p>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>

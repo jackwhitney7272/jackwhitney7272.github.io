@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<!--
+    Group members: Jack Whitney
+    Filename: contact.html
+    Date: 2026-05-07
+    Purpose: Provide visitors with contact info for the student club website maintainers.
+    Lab 3 Changes: Matched the uploaded contact page layout, corrected HTML structure, and added mobile hamburger navigation.
+-->
+
+<head>
+
+    <title>CCSU Student Clubs - Contact Us</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/bluedevil-favicon-32x32.png">
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1 class="centered animate-title">Contact Us</h1>
+        <p class="tab-desk centered">Make the Most of Your Life at CCSU!</p>
+
+    </header>
+
+    <!-- Mobile Nav: Lab 3 change, hamburger menu added for mobile viewports. -->
+
+    <nav class="mobile-nav">
+        <div id="nav-links">
+            <a href="index.html">Home</a>
+            <a href="clubinfo.html">Student Clubs</a>
+            <a href="eventinfo.html">Event Calendar</a>
+            <a href="request.html">Add a Club or Event</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <a class="nav-icon" onclick="hamburger()" aria-label="Open navigation menu">
+            <div id="icon">&#9776;</div>
+        </a>
+    </nav>
+
+    <!-- Tablet / Desktop Nav -->
+
+    <nav class="tab-desk">
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="clubinfo.html">Student Clubs</a></li>
+            <li><a href="eventinfo.html">Event Calendar</a></li>
+            <li><a href="request.html">Add a Club or Event</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+
+    </nav>
+
+    <main>
+
+
+        <div id="hero" class="tab-desk">
+
+            <img class="centered interactive-img" src="images/student-group-sitting.jpg" alt="group of students sitting against a wall">
+
+        </div>
+
+        <div id="studentleaders1" class="mobile">
+
+            <h2>Student Government Leadership</h2>
+
+            <ul>
+
+                <li>Susan Green, President</li>
+
+                <li>Tony Tunelli, Vice President</li>
+
+                <li>Rita Robespierre, Treasurer</li>
+
+                <li>Dana Scribner, Secretary</li>
+
+                <li>Teri Liebowitz, Communications</li>
+
+                <li>Student Clubs Website Team</li>
+
+            </ul>
+
+        </div>
+
+        <div id="studentleaders2" class="tab-desk">
+
+            <table>
+                <caption>CCSU Student Government</caption>
+                <tr>
+                    <!-- Row 1 -->
+                    <th>Title</th>
+                    <th style="width: 20%;">Name</th>
+                    <th style="width: 20%;">Contact</th>
+                    <th>Academic Program</th>
+                    <th style="width: 10%;">Term</th>
+                    <th style="width: 25%;">Focus Areas</th>
+                </tr>
+                <tr>
+                    <!-- Row 2 -->
+                    <td>President</td>
+                    <td>Susan Green</td>
+                    <td>(888)&nbsp;555-1212<br>greens@my.ccsu.edu</td>
+                    <td>BA, Business Administration, 2026</td>
+                    <td style="text-align: center;">2025-26</td>
+                    <td>Represents the Student Government in all University leadership discussions; sets the overall direction for Student Government and its programs.</td>
+                </tr>
+                <tr>
+                    <!-- Row 3 -->
+                    <td>Vice President</td>
+                    <td>Tony Tunelli</td>
+                    <td>(888)&nbsp;555-1212<br>tunellit@my.ccsu.edu</td>
+                    <td>BA, Business Administration, 2027</td>
+                    <td style="text-align: center;">2025-26</td>
+                    <td>Manages day-to-day Student Government operations.</td>
+                </tr>
+                <tr>
+                    <!-- Row 4 -->
+                    <td>Treasurer</td>
+                    <td>Rita Robespierre</td>
+                    <td>(888)&nbsp;555-1212<br>robespierrer@my.ccsu.edu</td>
+                    <td>BS, Accounting, 2026</td>
+                    <td style="text-align: center;">2025-26</td>
+                    <td>Maintains Student Government accounts, receives and disburses University funding, and prepares financial reports.</td>
+                </tr>
+                <tr>
+                    <!-- Row 5 -->
+                    <td>Secretary</td>
+                    <td>Dana Scribner</td>
+                    <td>(888)&nbsp;555-1212<br>scribnerd@my.ccsu.edu</td>
+                    <td>BA, English, 2027</td>
+                    <td style="text-align: center;">2025-26</td>
+                    <td>Documents Student Government meetings and actions; prepares meeting minutes and maintains records.</td>
+                </tr>
+                <tr>
+                    <!-- Row 6 -->
+                    <td>Communications Officer</td>
+                    <td>Teri Liebowitz</td>
+                    <td>(888)&nbsp;555-1212<br>liebowitzt@my.ccsu.edu</td>
+                    <td>BA, Communications, 2027</td>
+                    <td style="text-align: center;">2025-26</td>
+                    <td>Directs Student Government communications programs and social media.</td>
+                </tr>
+                <tr>
+                    <!-- Row 7 -->
+                    <td>Student Club Website Team</td>
+                    <td>Franklin Cisneros<br>Judy Morningstar<br>Tony Parkes</td>
+                    <td>(888)&nbsp;555-1212<br>studentclubs@ccsu.edu</td>
+                    <td colspan="2">Student club support team</td>
+                    <td>Maintains the Student Government webpage and assists the Communications Officer with social media mechanisms.</td>
+                </tr>
+            </table>
+
+        </div>
+
+        <div id="contact">
+
+            <h2 class="centered">Please feel free to contact us any time by text, phone, or email.</h2>
+
+            <p class="centered"><a href="tel:8885551212">(888)&nbsp;555-1212</a></p>
+
+            <p><a class="email-link centered" href="mailto:studentclubs@ccsu.edu">studentclubs@ccsu.edu</a></p>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <p class="tel-link"><a href="tel:8885551212">(888)&nbsp;555-1212</a></p>
+        <p><a class="email-link" href="mailto:studentclubs@ccsu.edu">studentclubs@ccsu.edu</a></p>
+        <p class="tab-desk">
+            <a href="http://www.ccsu.edu"><img class="centered" src="images/ccsu-logo.png" alt="CCSU Logo"></a>
+        </p>
+        <p class="mobile centered"><a href="http://www.ccsu.edu">www.ccsu.edu</a></p>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>
