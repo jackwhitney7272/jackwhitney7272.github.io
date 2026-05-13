@@ -1,0 +1,85 @@
+/*
+    Student Name: Jack Whitney
+    Date: 5/12/2026
+    File Name: styles.css
+*/
+
+body {
+    padding-top: 56px;
+    background-color: #fff;
+}
+
+.hero {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../images/music-notes.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.welcome {
+    margin-top: 10%;
+}
+
+.bg-dark-purple {
+    background-color: #373684;
+}
+
+.text-dark-purple {
+    color: #373684;
+}
+
+main h1, main h2, main h3, .card-title {
+    color: #373684;
+}
+
+.navbar-brand {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.nav-link {
+    font-family: Georgia, 'Times New Roman', serif;
+}
+
+.nav-link:hover {
+    color: #c0caf7 !important;
+}
+
+.page-heading {
+    color: #373684;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-weight: bold;
+}
+
+.card-img-top {
+    height: 260px;
+    object-fit: cover;
+}
+
+.lesson-audio {
+    width: 100%;
+}
+
+.table-purple thead {
+    background-color: #373684;
+    color: #fff;
+}
+
+.table-purple tbody tr:nth-child(odd) {
+    background-color: #e5e9fc;
+}
+
+.map {
+    border: 5px solid #373684;
+    width: 100%;
+    min-height: 350px;
+}
+
+.social-icon {
+    display: inline-block;
+}
+
+footer a:hover {
+    color: #c0caf7 !important;
+}
