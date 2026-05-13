@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="We provide music lessons for piano, guitar, electric guitar, bass guitar, ukelele, and the violin. Your first two lessons are free.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piano, Guitar, Violin Lessons | Strike a Chord</title>
+
+    <!--
+        Student Name: Jack Whitney
+        File Name: lessons.html
+        Date: 5/11/2026
+    -->
+
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" sizes="192x192" href="images/android-chrome-192.png">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div id="container">
+
+    <!-- Mobile Nav -->
+    <nav class="mobile-nav">
+        <div id="menu-links">
+            <a href="index.html">Home</a>
+            <a href="lessons.html">Lessons</a>
+            <a href="instructors.html">Instructors</a>
+            <a href="rentals.html">Rentals</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <a class="menu-icon" onclick="hamburger()">
+            <div>&#9776;</div>
+        </a>
+    </nav>
+
+    <header>
+        <h1><span class="tab-desk">&#9836;</span> Strike a Chord <span class="tab-desk">&#9836;</span></h1>
+    </header>
+
+    <nav class="tab-desk">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="lessons.html">Lessons</a></li>
+            <li><a href="instructors.html">Instructors</a></li>
+            <li><a href="rentals.html">Rentals</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="piano">
+            <h2>Piano Lessons</h2>
+            <img class="round" src="images/piano-lesson.jpg" alt="piano teacher and student sitting at a piano">
+            <p>We offer piano lessons for beginners through advanced students. Students learn proper technique, music theory, and performance skills.</p>
+            <audio controls>
+                <source src="media/piano.mp3" type="audio/mp3">
+                <source src="media/piano.ogg" type="audio/ogg">
+                <p>Your browser does not support the audio element.</p>
+            </audio>
+        </section>
+
+        <section id="guitar">
+            <h2>Guitar Lessons</h2>
+            <img class="round" src="images/child-guitar.jpg" alt="child holding an acoustic guitar">
+            <p>Our guitar lessons include acoustic guitar, electric guitar, and bass guitar. Students learn chords, rhythm, and songs they enjoy.</p>
+            <audio controls>
+                <source src="media/guitar.mp3" type="audio/mp3">
+                <source src="media/guitar.ogg" type="audio/ogg">
+                <p>Your browser does not support the audio element.</p>
+            </audio>
+        </section>
+
+        <section id="violin">
+            <h2>Violin Lessons</h2>
+            <img class="round" src="images/woman-violin.jpg" alt="woman playing the violin">
+            <p>Our violin lessons help students improve posture, bow control, reading music, and confidence while playing.</p>
+            <audio controls>
+                <source src="media/violin.mp3" type="audio/mp3">
+                <source src="media/violin.ogg" type="audio/ogg">
+                <p>Your browser does not support the audio element.</p>
+            </audio>
+        </section>
+    </main>
+
+    <footer>
+        <div class="copyright">
+            <p>&copy; Copyright 2026. All Rights Reserved.</p>
+            <p><a href="mailto:lessons@strikeachord.net">lessons@strikeachord.net</a></p>
+        </div>
+
+        <div class="social">
+            <a href="https://www.facebook.com" target="_blank" rel="noopener"><img src="images/facebook-logo.png" alt="Facebook logo"></a>
+            <a href="https://www.twitter.com" target="_blank" rel="noopener"><img src="images/twitter-logo.png" alt="Twitter logo"></a>
+        </div>
+    </footer>
+
+</div>
+
+<script src="scripts/script.js"></script>
+
+</body>
+</html>
